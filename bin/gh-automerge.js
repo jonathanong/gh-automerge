@@ -7,7 +7,7 @@ const {
   getPullRequest,
   mergeMasterIntoPullRequest,
   mergePullRequest,
-  deleteBranch,
+  deleteBranch
 } = require('../lib/gh')
 
 async function automerge (pr) {
