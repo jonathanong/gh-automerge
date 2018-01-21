@@ -1,5 +1,7 @@
 # gh-automerge
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jonathanong/gh-automerge.svg)](https://greenkeeper.io/)
+
 Cron bot that automatically:
 
 - Merges master into your PR when it's out of date
