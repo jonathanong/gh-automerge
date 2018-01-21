@@ -1,0 +1,42 @@
+defaults: &defaults
+  working_directory: ~/code
+  docker:
+    - image: circleci/node:8
+      environment:
+        NPM_CONFIG_LOGLEVEL: error # make npm commands less noisy
+        JOBS: max # https://gist.github.com/ralphtheninja/f7c45bdee00784b41fed
+
+restore_cache: &restore_cache
+  keys:
+    - code-{{ .Branch }}-{{ checksum ".nvmrc" }}-{{ checksum "package.json" }}
+    - code-master-{{ checksum ".nvmrc" }}-{{ checksum "package.json" }}
+
+save_cache: &save_cache
+  key: code-{{ .Branch }}-{{ checksum ".nvmrc" }}-{{ checksum "package.json" }}
+  paths:
+    - node_modules
+
+version: 2
+jobs:
+  test:
+  automerge:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache: *restore_cache
+      - run: npm install
+      - run: npx gh-automerge
+      - save_cache: *save_cache
+
+workflows:
+  version: 2
+  automerge:
+    triggers:
+      - schedule:
+          cron: "0,5,10,15,20,25,30,35,40,45,50,55 * * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - automerge

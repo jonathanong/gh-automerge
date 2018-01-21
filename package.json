@@ -1,0 +1,35 @@
+{
+  "name": "gh-automerge",
+  "version": "1.0.0",
+  "description": "Automatically merge your PRs",
+  "bin": {
+    "gh-automerge": "bin/gh-automerge.js"
+  },
+  "scripts": {
+    "test": "eslint .",
+    "eslint": "eslint --fix ."
+  },
+  "author": "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)",
+  "license": "MIT",
+  "repository": "jonathanong/gh-automerge",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "keywords": [
+    "github",
+    "bot",
+    "automatically",
+    "merge",
+    "pull",
+    "request",
+    "pr",
+    "automerge"
+  ]
+}
