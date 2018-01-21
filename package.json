@@ -13,10 +13,17 @@
   "license": "MIT",
   "repository": "jonathanong/gh-automerge",
   "dependencies": {
-
+    "chalk": "^2.3.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
   },
   "devDependencies": {
-
+    "eslint": "^4.16.0",
+    "eslint-config-standard": "^10",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
   },
   "files": [
     "bin",
