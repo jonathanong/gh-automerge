@@ -6,8 +6,8 @@
     "gh-automerge": "bin/gh-automerge.js"
   },
   "scripts": {
-    "test": "eslint .",
-    "eslint": "eslint --fix ."
+    "eslint": "eslint --fix .",
+    "eslint:ci": "eslint ."
   },
   "author": "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)",
   "license": "MIT",
