@@ -12,12 +12,14 @@ GH-Automerge is a cron bot. It is built node and can used by being installed wit
 
 **GH-Automerge automatically:**
 
-- Merges master into a PR when it is out of date
-- Merges a PR when it's up-to-date and is not blocked by checks
+- Merges master into a pull request when it is out of date
+- Merges a pull request when it is up-to-date and is not blocked by checks
 
 ## Usage
 
-To enable this on a PR, add a label called `AUTOMERGE` in Github.
+To enable automerge on a pull request, add a Github Label called `AUTOMERGE` to the pull request.
+
+![gh-automerge](https://user-images.githubusercontent.com/1074042/36138017-9db600c4-104c-11e8-862a-4f43bed4a02a.jpg)
 
 ## Installation
 
@@ -27,7 +29,7 @@ GH-Automerge could run this where ever. However, it is typically run as a cron j
 1. Create a repository
 1. Run `npm i --save-dev gh-automerge`
 
-**Enabling GH-Automerge:**
-1. Copy the [`.circleci/config.yml` template](.circleci/template.config.yml) from this [repository]() into a repository
+**Enabling GH-Automerge in CircleCI:**
+1. Copy the [`.circleci/config.yml` template](.circleci/template.config.yml) into a repository
 1. Enable CircleCI
 1. Add `GITHUB_TOKEN` and `GITHUB_ORG` env vars to your CircleCI config
