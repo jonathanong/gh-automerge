@@ -37,6 +37,11 @@
     "pull",
     "request",
     "pr",
-    "automerge"
+    "automerge",
+    "continuous",
+    "integration",
+    "delivery",
+    "ci",
+    "cd"
   ]
 }
