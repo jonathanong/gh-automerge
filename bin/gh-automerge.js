@@ -45,8 +45,8 @@ async function run () {
     try {
       await automerge(pr)
     } catch (err) {
-      console.error(chalk.error('Failed to automerge PR: ' + pr.pull_request.url))
-      console.error(chalk.error(err.stack))
+      console.error(chalk.red('Failed to automerge PR: ' + pr.pull_request.url))
+      console.error(chalk.red(err.stack))
     }
   }
 }
@@ -54,6 +54,6 @@ async function run () {
 run().then(() => {
   process.exit(0)
 }, (err) => {
-  console.error(chalk.error(err.stack))
+  console.error(chalk.red(err.stack))
   process.exit(1)
 })
