@@ -1,0 +1,16 @@
+{
+  "default": true,
+  "MD007": {
+    "indent": 2
+  },
+  "MD033": [
+    "img"
+  ],
+  "header-increment": false,
+  "line-length": false,
+  "first-line-h1": false,
+  "first-header-h1": false,
+  "no-inline-html": false,
+  "no-hard-tabs": false,
+  "whitespace": false
+}

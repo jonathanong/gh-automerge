@@ -1,13 +1,14 @@
 {
   "name": "gh-automerge",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Automatically merge your PRs",
   "bin": {
     "gh-automerge": "bin/gh-automerge.js"
   },
   "scripts": {
     "eslint": "eslint --fix .",
-    "eslint:ci": "eslint ."
+    "eslint:ci": "eslint .",
+    "markdownlint": "markdownlint *.md"
   },
   "author": "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)",
   "license": "MIT",
@@ -23,7 +24,8 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0"
+    "eslint-plugin-standard": "^4.0.0",
+    "markdownlint-cli": "^0.13.0"
   },
   "files": [
     "bin",
