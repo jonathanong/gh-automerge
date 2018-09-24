@@ -8,7 +8,7 @@
   "scripts": {
     "eslint": "eslint --fix .",
     "eslint:ci": "eslint .",
-    "markdownlint": "markdownlint README.md"
+    "markdownlint": "markdownlint *.md"
   },
   "author": "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)",
   "license": "MIT",
