@@ -1,6 +1,6 @@
 {
   "name": "gh-automerge",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Automatically merge your PRs",
   "bin": {
     "gh-automerge": "bin/gh-automerge.js"
