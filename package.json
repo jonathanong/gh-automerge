@@ -14,7 +14,7 @@
   "license": "MIT",
   "repository": "jonathanong/gh-automerge",
   "dependencies": {
-    "chalk": "^3.0.0",
+    "chalk": "^4.0.0",
     "request": "^2.83.0",
     "request-promise": "^4.2.2"
   },
